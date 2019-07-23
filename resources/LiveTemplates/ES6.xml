@@ -1,0 +1,21 @@
+<templateSet group="ES6">
+  <template name="imd" value="import $module$ from '$lib$';&#10;" description="import default statement" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="lib" expression="" defaultValue="&quot;lib&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="im" value="import { $module$ } from '$lib$';&#10;" description="import statement" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="&quot;module&quot;" alwaysStopAt="true" />
+    <variable name="lib" expression="" defaultValue="&quot;lib&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="edp" value="/**&#10; * External dependencies&#10; */&#10;" description="External dependencies comment block" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
